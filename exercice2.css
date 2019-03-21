@@ -1,0 +1,29 @@
+.main_head
+{
+background-color: brown;  
+}
+.main_nav
+{
+    background-color: yellow;
+}
+.main_section
+{
+    background:green;
+}
+.main_aside
+{
+    background-color: yellow; 
+}
+.main_footer
+{
+    background-color:brown;
+}
+
+header, nav, section, aside, footer
+{
+border: 1px dashed black;
+}
+.row
+{
+    height:100vh
+}

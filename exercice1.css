@@ -1,0 +1,83 @@
+.principal_div
+{
+    display : grid ;
+    grid-template: 15vh 20vh 30vh 20vh 15vh / 1fr ;
+    grid-template-areas: "section1" "section2" "section3" "section4" "section5";
+}
+.main_bleu
+{
+    background-color: #87ceeb;
+}
+.main_rose
+{
+    background-color:#ee82ee;
+    border: 1px dashed black;
+}
+.main_beige
+{
+    background-color:#d8bfd8;
+}
+
+header, nav, section, aside, footer
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------PARTIE RESPONSIVE  MEDIA QUERY----------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) 
+{
+.principal_div 
+{
+display : grid ;
+grid-template: 15vh 20vh 30vh 20vh 15vh / 25vw 75vw ;
+grid-template-areas: 
+                    "section1  section1"
+                    "section2  section3"
+                    "section4  section4"
+                    "section5  section5";
+}
+header{
+    background-color: blue;
+    grid-area: section1; 
+    }
+nav{
+    background-color:pink;
+    grid-area: section2; 
+    }
+section{
+    background-color:bisque;
+    grid-area: section3; 
+    }
+
+aside{
+    background-color:pink;
+    grid-area:section4; 
+    }
+footer{
+    background-color: blue;
+    grid-area: section5; 
+    }
+}
+
+
+
+@media (min-width: 1050px) 
+{
+.principal_div 
+{
+display : grid ;
+grid-template: 20vh 60vh 20vh   / 25vw 50vw 25vw ;
+grid-template-areas: 
+                    "section1  section1 section1"
+                    "section2  section3 section4" 
+                    "section5  section5 section5";
+}
+}
+
+
